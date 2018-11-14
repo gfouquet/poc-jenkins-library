@@ -4,11 +4,15 @@ pipeline {
 
     stages {
         stage("Custom pre stage") {
-            echo "CUSTOM PRE STAGE !!!"
+            steps {
+                echo "CUSTOM PRE STAGE !!!"
+            }
         }
 
         stage("Custom post stage") {
-            echo "CUSTOM POST STAGE !!!"
+            steps {
+                echo "CUSTOM POST STAGE !!!"
+            }
         }
     }
 }

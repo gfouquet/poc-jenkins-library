@@ -1,5 +1,8 @@
 #!/usr/bin/env groovy
-node {
+pipeline {
+    agent any
+
+    stages {
         stage("Custom pre stage") {
             steps {
                 echo "CUSTOM PRE STAGE !!!"
@@ -15,4 +18,5 @@ node {
                 echo "CUSTOM POST STAGE !!!"
             }
         }
+    }
 }

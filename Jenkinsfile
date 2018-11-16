@@ -1,9 +1,9 @@
 #!/usr/bin/env groovy
 node {
         stage("Custom pre stage") {
-            steps {
+            //steps {
                 echo "CUSTOM PRE STAGE !!!"
-            }
+            //}
         }
 
         singleStage {
@@ -11,8 +11,8 @@ node {
         }
 
         stage("Custom post stage") {
-            steps {
+            //steps {
                 echo "CUSTOM POST STAGE !!!"
-            }
+            //}
         }
 }

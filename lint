@@ -1,0 +1,1 @@
+ssh -p 3107 admin@localhost declarative-linter < ./Jenkinsfile

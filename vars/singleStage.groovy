@@ -1,5 +1,5 @@
 def call(body) {
-    stage("single step") {
+    stage("Single Stage") {
         body()
     }
 }

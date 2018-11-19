@@ -1,22 +1,18 @@
 #!/usr/bin/env groovy
-pipeline {
-    agent any
-
-    stages {
-        stage("Custom pre stage") {
-            steps {
-                echo "CUSTOM PRE STAGE !!!"
-            }
+node {
+    stage("Custom pre stage") {
+        steps {
+            echo "CUSTOM PRE STAGE !!!"
         }
+    }
 
-        singleStage {
-            echo "SINGLE STAGE !!!"
-        }
+    singleStage {
+        echo "SINGLE STAGE !!!"
+    }
 
-        stage("Custom post stage") {
-            steps {
-                echo "CUSTOM POST STAGE !!!"
-            }
+    stage("Custom post stage") {git st
+        steps {
+            echo "CUSTOM POST STAGE !!!"
         }
     }
 }

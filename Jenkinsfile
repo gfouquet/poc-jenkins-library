@@ -9,8 +9,10 @@ pipeline {
             }
         }
 
-        singleStage {
-            echo "SINGLE STAGE !!!"
+        script {
+            singleStage {
+                echo "SINGLE STAGE !!!"
+            }
         }
 
         stage("Custom post stage") {

@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-pipeline {
+templatePipeline {
     agent any
 
     stages {
